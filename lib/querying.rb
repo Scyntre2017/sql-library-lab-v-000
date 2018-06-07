@@ -21,7 +21,10 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "Write your SQL query here"
+  "SELECT authors.name, sub-genres.name
+  FROM authors, sub-genres
+  INNER JOIN series
+  ON authors.id = series.author_id"
 end
 
 def select_series_title_with_most_human_characters
